@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sairaghava</title>
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background: linear-gradient(to bottom, #3498db, #2c3e50); 
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        #content {
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #image-container {
+            position: relative;
+            margin-right: 20px; 
+        }
+
+        #image {
+            max-width: 200px;
+            max-height: 200px;
+            border-radius: 8px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        }
+.top{
+    position: absolute;
+    top: 0px;
+    font-size: 50px;
+    font-family: 'Open Sans', sans-serif;
+}
+        #text-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        #logo {
+            font-size: 3em;
+            font-weight: bold;
+            letter-spacing: 5px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        #slogan {
+            font-size: 1.2em;
+            margin-top: 10px;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+        #image-container:hover #hover-text {
+            opacity: 1;
+            top: -170px;
+        }
+
+        #text-container:hover #logo {
+            text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.8);
+        }
+
+        #text-container:hover #slogan {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <div id="image-container">
+            <img id="image" src="sanji.jpg" alt="One Piece Sanji">
+            <div id="hover-text">One Piece Sanji</div>
+        </div>
+        <div id="text-container">
+            <div id="logo">Sairaghava</div>
+            <div id="slogan">I am a webdev enthusiast</div>
+        </div>
+    </div>
+    <div class="top">My Logo</div>
+</body>
+</html>
